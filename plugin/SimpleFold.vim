@@ -388,7 +388,7 @@ let g:ruby_simplefold_expr =
 	    \ '|^\s*[A-Z]\w+\s*\=[^=]|^__END__$'
 let g:ruby_simplefold_nestable_start_expr = 
 	    \ '\v^\s*(def>|if>|unless>|while>.*(<do>)?|' . 
-		\         'until>.*(<do>)?|case>|for>|begin>)' .
+		\         'until>.*(<do>)?|case>|for>|begin>|describe>|before|after|it>)' .
 		\ '|^[^#]*.*<do>\s*(\|.*\|)?'
 let g:ruby_simplefold_nestable_end_expr = '\v^\s*end'
     
