@@ -385,8 +385,8 @@ let g:ruby_simplefold_expr =
 	    \    'attr|module_function' .
       " Support for Rspec
       \     '|describe|before|after|it' .
-      " Resume originial
-            \')\s' . 
+      " Resume original
+      \     ')\s' . 
 	    \ '|\v^\s*(public|private|protected)>' .
 	    \ '|^\s*\w+attr_(reader|accessor)\s|^\s*[#%"0-9]{0,4}\s*\{\{\{[^{])' .
 	    \ '|^\s*[A-Z]\w+\s*\=[^=]|^__END__$'
