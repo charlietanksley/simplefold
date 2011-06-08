@@ -382,13 +382,13 @@ let g:simplefold_marker_end = '\v\}\}\}\}'
 " Ruby support
 let g:ruby_simplefold_expr = 
 	    \'\v(^\s*(def|class|module|attr_reader|attr_accessor|alias_method|' .
-	    \    'attr|module_function|describe|before|after|it' . ')\s' . 
+	    \    'attr|module_function|describe' . ')\s' . 
 	    \ '|\v^\s*(public|private|protected)>' .
 	    \ '|^\s*\w+attr_(reader|accessor)\s|^\s*[#%"0-9]{0,4}\s*\{\{\{[^{])' .
 	    \ '|^\s*[A-Z]\w+\s*\=[^=]|^__END__$'
 let g:ruby_simplefold_nestable_start_expr = 
 	    \ '\v^\s*(def>|if>|unless>|while>.*(<do>)?|' . 
-		\         'until>.*(<do>)?|case>|for>|begin>|describe>|before|after|it>)' .
+		\         'until>.*(<do>)?|case>|for>|begin>)' .
 		\ '|^[^#]*.*<do>\s*(\|.*\|)?'
 let g:ruby_simplefold_nestable_end_expr = '\v^\s*end'
     
