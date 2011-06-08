@@ -382,11 +382,7 @@ let g:simplefold_marker_end = '\v\}\}\}\}'
 " Ruby support
 let g:ruby_simplefold_expr = 
 	    \'\v(^\s*(def|class|module|attr_reader|attr_accessor|alias_method|' .
-	    \    'attr|module_function' .
-      " Support for Rspec
-      \     '|describe|before|after|it' .
-      " Resume original
-      \     ')\s' . 
+	    \    'attr|module_function|describe|before|after|it' . ')\s' . 
 	    \ '|\v^\s*(public|private|protected)>' .
 	    \ '|^\s*\w+attr_(reader|accessor)\s|^\s*[#%"0-9]{0,4}\s*\{\{\{[^{])' .
 	    \ '|^\s*[A-Z]\w+\s*\=[^=]|^__END__$'
